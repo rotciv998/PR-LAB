@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#8BFFFFFF"
+    android:id="@+id/progress_view"
+    android:visibility="visible"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:ignore="UselessParent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/MyButton"
+            android:id="@+id/sendMesage"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:text="Send message"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/MyButton"
+            android:id="@+id/reciveMessage"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:text="Recive message"
+            android:layout_below="@+id/sendMesage"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>
